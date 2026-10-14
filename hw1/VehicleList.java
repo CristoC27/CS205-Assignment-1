@@ -16,7 +16,13 @@ public class VehicleList {
 		
 	}
 	public VehicleNode first() {
-		return head;
+		if (isEmpty()) {
+			System.err.println("List is empty! Cannot get first item");
+			return null;
+		}
+		else {
+			return head;
+		}
 	
 	}
 	public VehicleNode last() {
